@@ -1,0 +1,45 @@
+.artigos-banner{
+    background-color: var(--cor-escuro);
+    color: var(--cor-fundo);
+    padding: 80px 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.artigos-banner-tag{
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--cor-principal);
+    font-weight: 500;
+}
+
+.artigos-banner-titulo{
+    font-family: var(--fonte-titulo);
+    font-size: 52px;
+    max-width: 600px;
+    line-height: 1.15;
+}
+
+.artigos-banner-sub {
+    font-size: 16px;
+    color: #888;
+    max-width: 480px;
+    line-height: 1.7;
+}
+
+.banner-numero-fundo{
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: var(--fonte-titulo);
+    font-size: 200px;
+    color: rgba(255, 255, 255, 0.3);
+    line-height: 1;
+    user-select: none;
+    pointer-events: none;
+}
