@@ -1,331 +1,363 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevBlog - Artigos</title>
-    <link rel="stylesheet" href="../global.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="style.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
 
+  <body>
     <header class="cabecalho">
-        <a href="index.html" class="logo"> Dev <span>Blog</span></a>
+      <a href="index.html" class="logo">Dev<span>Blog</span></a>
 
-        <nav class="navbar">
-            <ul class="nav-lista">
-                <li><a href="index.html" class="nav-link">Ínicio</a></li>
-                <li><a href="artigos/index.html" class="nav-link">Artigos</a></li>
-                <li><a href="#sobre" class="nav-link">Sobre</a></li>
-                <li><a href="#contato" class="nav-link">Contato</a></li>
-            </ul>
-            <a href="auth/login/index.html" class="btn-login">Login</a>
-        </nav>
+      <nav class="navbar">
+        <ul class="nav-lista">
+          <li><a href="index.html" class="nav-link">Início</a></li>
+          <li><a href="artigos/index.html" class="nav-link">Artigos</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+
+        <a href="auth/login/index.html" class="btn-login">Login</a>
+      </nav>
     </header>
 
     <main>
+      <section class="artigos-banner">
+        <span class="artigos-banner-tag">Todos os Artigos</span>
+        <h1 class="artigos-banner-titulo">
+          Conteúdo para<br />devs que evoluem
+        </h1>
+        <p class="artigos-banner-sub">
+          HTML, CSS, JavaScript e muito mais - escrito por quem está na prática,
+          para quem está começando.
+        </p>
+        <div class="banner-numero-fundo">24</div>
+      </section>
 
-        <section class="artigos-banner">
-            <span class="artigos-banner-tag"> Todos os Artigos</span>
-            <h1 class="artigos-banner-titulo">Conteúdo para <br> devs que evoluem</h1>
-            <p class="artigos-banner-sub">
-                HTML, CSS, JavaScript e muito mais - escrito por
-                quem está na prática, para quem está começando.
-            </p>
-            <div class="banner-numero-fundo">24</div>
-        </section>
-
-        <div class="artigos-controles">
-            <div class="busca-container">
-            <span class="busca-icone"> <i class="fas fa-search" aria-hidden="true"></i>
-                <input type="text" class="busca-input" placeholder="Buscar artigos...">
-            </span>
-         </div>
-
-         <div class="filtros-lista">
-            <button class="filtro-btn">Todos</button>
-            <button class="filtro-btn">HTML</button>
-            <button class="filtro-btn">CSS</button>
-            <button class="filtro-btn">javaScript</button>
-            <button class="filtro-btn">Carreira</button>
-            <button class="filtro-btn">Projeto</button>
-            <button class="filtro-btn">Dicas</button>
-         </div>
+      <div class="artigos-controles">
+        <div class="busca-container">
+          <span class="busca-icone">
+            <i class="fas fa-search" aria-hidden="true"></i>
+          </span>
+          <input
+            type="text"
+            class="busca-input"
+            placeholder="Buscar artigos..."
+          />
         </div>
 
-        <section class="artigos-grid-container">
-            <p class="artigos-grid-titulo"> 24 artigos publicados</p>
+        <div class="filtros-lista">
+          <button class="filtro-btn">Todos</button>
+          <button class="filtro-btn">HTML</button>
+          <button class="filtro-btn">CSS</button>
+          <button class="filtro-btn">JavaScript</button>
+          <button class="filtro-btn">Carreira</button>
+          <button class="filtro-btn">Projeto</button>
+          <button class="filtro-btn">Dicas</button>
+        </div>
+      </div>
 
-            <div class="artigos-grid"></div>
+      <!-- 
+      CSS -> fab fa-css3-alt
+      JavaScript -> fab fa-js
+      Carreira -> fas fa-briefcase
+      Dicas -> fas fa-lightbulb
+      Projeto -> fa fa-rocket
+      -->
 
-            <article class="artigo-card destaque">
-                <div class="artigo-card-imagem">
-                    <div class="artigos-card-imagem-placeholder">HTML</div>
 
-                    <div class="artigos-card-corpo"></div>
-                    <span class="badge badge-laranja">
-                        <i class="fab fa-html5" aria-hidden="true"></i>
-                        HTML
-                    </span>
-                    <h2 class="artigo-card-titulo">
-                    O que é HTML e por que é a base de tudo na web?
-                    </h2>
-                    <p class="artigo-card-texto texto-3-linhas">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Rem quasi fugiat ullam, facere tempora, voluptate minima ex 
-                        asperiores eius qui blanditiis assumenda mollitia provident
-                        tenetur repellat necessitatibus earum. Commodi, repellendus.
-                        Suscipit asperiores aspernatur soluta aperiam tempora? Corrupti 
-                        magnam fugiat doloribus laborum nisi repellendus, sequi cum sint
-                        numquam incidunt modi, cumque iste minima ipsa excepturi unde
-                        iure aspernatur fuga accusamus sed? Tempora impedit minima,
-                        sed laudantium unde rerum possimus soluta fuga. Cum ipsa labore,
-                        molestiae rerum illo, ducimus repellat porro, officia quos itaque
-                        nesciunt! Ullam, possimus quos repudiandae est maxime non!
-                    </p>
+      <section class="artigos-grid-container">
+        <p class="artigos-grid-titulo">24 artigos publicados</p>
 
-                    <div class="artigos-card-rodape">
-                        <span class="artigo-card-meta">
-                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                            25 mai. 2026 •
-                            <i class="fa fa-clock" aria-hidden="true"></i>
-                            4 min
-                        </span>
-                        <a href="#" class="artigo-card-link">Ler artigos <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </article>
+        <div class="artigos-grid">
+          <article class="artigo-card destaque">
+            <div class="artigo-card-imagem">
+              <div class="artigo-card-imagem-placeholder">HTML</div>
+            </div>
 
-            <article class="artigo-card">
-                <div class="artigo-card-imagem">
-                    <div class="artigos-card-imagem-placeholder">CSS</div>
+            <div class="artigo-card-corpo">
+              <span class="badge badge-laranja">
+                <i class="fab fa-html5" aria-hidden="true"></i>
+                HTML
+              </span>
+              <h2 class="artigo-card-titulo">
+                O que é o HTML e por que ele é a base de tudo na web?
+              </h2>
+              <p class="artigo-card-texto texto-3-linhas">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                unde perspiciatis perferendis error obcaecati, amet nam cum sit
+                ipsa, rerum laboriosam consectetur nesciunt veritatis totam
+                fugit dolor laudantium quae aut? Explicabo, veniam. Odit quis
+                sapiente, ab quasi, explicabo praesentium perferendis nam neque
+                quos error illo enim non eveniet dolore, voluptatem debitis
+                suscipit necessitatibus aliquid molestiae minima rem. Nihil,
+                officia incidunt! Laboriosam obcaecati ad itaque amet natus odio
+                error! Sequi quisquam dignissimos, eum quia ab voluptatum
+                laboriosam neque cum facere sunt, quae distinctio voluptatem
+                iure minus officiis, molestiae consequatur ad. Saepe!
+              </p>
 
-                    <div class="artigos-card-corpo"></div>
-                    <span class="badge badge-laranja">
-                        <i class="fab fa-css3-alt" aria-hidden="true"></i>
-                        CSS
-                    </span>
-                    <h2 class="artigo-card-titulo">
-                    Novos estilos utilizando CSS3
-                    </h2>
-                    <p class="artigo-card-texto texto-3-linhas">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Rem quasi fugiat ullam, facere tempora, voluptate minima ex 
-                        asperiores eius qui blanditiis assumenda mollitia provident
-                        tenetur repellat necessitatibus earum. Commodi, repellendus.
-                        Suscipit asperiores aspernatur soluta aperiam tempora? Corrupti 
-                        magnam fugiat doloribus laborum nisi repellendus, sequi cum sint
-                        numquam incidunt modi, cumque iste minima ipsa excepturi unde
-                        iure aspernatur fuga accusamus sed? Tempora impedit minima,
-                        sed laudantium unde rerum possimus soluta fuga. Cum ipsa labore,
-                        molestiae rerum illo, ducimus repellat porro, officia quos itaque
-                        nesciunt! Ullam, possimus quos repudiandae est maxime non!
-                    </p>
+              <div class="artigo-card-rodape">
+                <span class="artigo-card-meta">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                     25 mai. 2026 • 
+                     <i class="fa fa-clock" aria-hidden="true"></i>
+                     4 min
+                </span>
+                <a href="#" class="artigo-card-link">Ler artigo <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </article>
 
-                    <div class="artigos-card-rodape">
-                        <span class="artigo-card-meta">
-                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                            25 mai. 2026 •
-                            <i class="fa fa-clock" aria-hidden="true"></i>
-                            4 min
-                        </span>
-                        <a href="#" class="artigo-card-link">Ler artigos <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </article>
+           <article class="artigo-card">
+            <div class="artigo-card-imagem">
+              <div class="artigo-card-imagem-placeholder">CSS</div>
+            </div>
 
-            <article class="artigo-card">
-                <div class="artigo-card-imagem">
-                    <div class="artigos-card-imagem-placeholder">JavaScript</div>
+            <div class="artigo-card-corpo">
+              <span class="badge badge-azul">
+                <i class="fab fa-css3-alt" aria-hidden="true"></i>
+                CSS
+              </span>
+              <h2 class="artigo-card-titulo">
+                Novos estilos utilizando CSS3
+              </h2>
+              <p class="artigo-card-texto texto-3-linhas">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                unde perspiciatis perferendis error obcaecati, amet nam cum sit
+                ipsa, rerum laboriosam consectetur nesciunt veritatis totam
+                fugit dolor laudantium quae aut? Explicabo, veniam. Odit quis
+                sapiente, ab quasi, explicabo praesentium perferendis nam neque
+                quos error illo enim non eveniet dolore, voluptatem debitis
+                suscipit necessitatibus aliquid molestiae minima rem. Nihil,
+                officia incidunt! Laboriosam obcaecati ad itaque amet natus odio
+                error! Sequi quisquam dignissimos, eum quia ab voluptatum
+                laboriosam neque cum facere sunt, quae distinctio voluptatem
+                iure minus officiis, molestiae consequatur ad. Saepe!
+              </p>
 
-                    <div class="artigos-card-corpo"></div>
-                    <span class="badge badge-laranja">
-                        <i class="fab fa-js" aria-hidden="true"></i>
-                        JavaScript
-                    </span>
-                    <h2 class="artigo-card-titulo">
-                    Tornando páginas dinâmicas usando JavaScript
-                    </h2>
-                    <p class="artigo-card-texto texto-3-linhas">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Rem quasi fugiat ullam, facere tempora, voluptate minima ex 
-                        asperiores eius qui blanditiis assumenda mollitia provident
-                        tenetur repellat necessitatibus earum. Commodi, repellendus.
-                        Suscipit asperiores aspernatur soluta aperiam tempora? Corrupti 
-                        magnam fugiat doloribus laborum nisi repellendus, sequi cum sint
-                        numquam incidunt modi, cumque iste minima ipsa excepturi unde
-                        iure aspernatur fuga accusamus sed? Tempora impedit minima,
-                        sed laudantium unde rerum possimus soluta fuga. Cum ipsa labore,
-                        molestiae rerum illo, ducimus repellat porro, officia quos itaque
-                        nesciunt! Ullam, possimus quos repudiandae est maxime non!
-                    </p>
+              <div class="artigo-card-rodape">
+                <span class="artigo-card-meta">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                     25 mai. 2026 • 
+                     <i class="fa fa-clock" aria-hidden="true"></i>
+                     4 min
+                </span>
+                <a href="#" class="artigo-card-link">Ler artigo <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </article>
 
-                    <div class="artigos-card-rodape">
-                        <span class="artigo-card-meta">
-                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                            25 mai. 2026 •
-                            <i class="fa fa-clock" aria-hidden="true"></i>
-                            4 min
-                        </span>
-                        <a href="#" class="artigo-card-link">Ler artigos <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </article>
+           <article class="artigo-card">
+            <div class="artigo-card-imagem">
+              <div class="artigo-card-imagem-placeholder">JS</div>
+            </div>
 
-            <article class="artigo-card">
-                <div class="artigo-card-imagem">
-                    <div class="artigos-card-imagem-placeholder">Carreira</div>
+            <div class="artigo-card-corpo">
+              <span class="badge badge-laranja">
+                <i class="fab fa-js" aria-hidden="true"></i>
+                JS
+              </span>
+              <h2 class="artigo-card-titulo">
+                Tornando páginas dinâmicas usando JavaScript
+              </h2>
+              <p class="artigo-card-texto texto-3-linhas">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                unde perspiciatis perferendis error obcaecati, amet nam cum sit
+                ipsa, rerum laboriosam consectetur nesciunt veritatis totam
+                fugit dolor laudantium quae aut? Explicabo, veniam. Odit quis
+                sapiente, ab quasi, explicabo praesentium perferendis nam neque
+                quos error illo enim non eveniet dolore, voluptatem debitis
+                suscipit necessitatibus aliquid molestiae minima rem. Nihil,
+                officia incidunt! Laboriosam obcaecati ad itaque amet natus odio
+                error! Sequi quisquam dignissimos, eum quia ab voluptatum
+                laboriosam neque cum facere sunt, quae distinctio voluptatem
+                iure minus officiis, molestiae consequatur ad. Saepe!
+              </p>
 
-                    <div class="artigos-card-corpo"></div>
-                    <span class="badge badge-laranja">
-                        <i class="fa-briefcase" aria-hidden="true"></i>
-                        Carreira
-                    </span>
-                    <h2 class="artigo-card-titulo">
-                    Por onde começar na programação web?
-                    </h2>
-                    <p class="artigo-card-texto texto-3-linhas">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Rem quasi fugiat ullam, facere tempora, voluptate minima ex 
-                        asperiores eius qui blanditiis assumenda mollitia provident
-                        tenetur repellat necessitatibus earum. Commodi, repellendus.
-                        Suscipit asperiores aspernatur soluta aperiam tempora? Corrupti 
-                        magnam fugiat doloribus laborum nisi repellendus, sequi cum sint
-                        numquam incidunt modi, cumque iste minima ipsa excepturi unde
-                        iure aspernatur fuga accusamus sed? Tempora impedit minima,
-                        sed laudantium unde rerum possimus soluta fuga. Cum ipsa labore,
-                        molestiae rerum illo, ducimus repellat porro, officia quos itaque
-                        nesciunt! Ullam, possimus quos repudiandae est maxime non!
-                    </p>
+              <div class="artigo-card-rodape">
+                <span class="artigo-card-meta">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                     25 mai. 2026 • 
+                     <i class="fa fa-clock" aria-hidden="true"></i>
+                     4 min
+                </span>
+                <a href="#" class="artigo-card-link">Ler artigo <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </article>
 
-                    <div class="artigos-card-rodape">
-                        <span class="artigo-card-meta">
-                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                            25 mai. 2026 •
-                            <i class="fa fa-clock" aria-hidden="true"></i>
-                            4 min
-                        </span>
-                        <a href="#" class="artigo-card-link">Ler artigos <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </article>
+           <article class="artigo-card">
+            <div class="artigo-card-imagem">
+              <div class="artigo-card-imagem-placeholder">Carreira</div>
+            </div>
 
-            <article class="artigo-card">
-                <div class="artigo-card-imagem">
-                    <div class="artigos-card-imagem-placeholder">Dicas</div>
+            <div class="artigo-card-corpo">
+              <span class="badge badge-laranja">
+                <i class="fas fa-briefcase" aria-hidden="true"></i>
+                Carreira
+              </span>
+              <h2 class="artigo-card-titulo">
+                Por onde começar na programação web?
+              </h2>
+              <p class="artigo-card-texto texto-3-linhas">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                unde perspiciatis perferendis error obcaecati, amet nam cum sit
+                ipsa, rerum laboriosam consectetur nesciunt veritatis totam
+                fugit dolor laudantium quae aut? Explicabo, veniam. Odit quis
+                sapiente, ab quasi, explicabo praesentium perferendis nam neque
+                quos error illo enim non eveniet dolore, voluptatem debitis
+                suscipit necessitatibus aliquid molestiae minima rem. Nihil,
+                officia incidunt! Laboriosam obcaecati ad itaque amet natus odio
+                error! Sequi quisquam dignissimos, eum quia ab voluptatum
+                laboriosam neque cum facere sunt, quae distinctio voluptatem
+                iure minus officiis, molestiae consequatur ad. Saepe!
+              </p>
 
-                    <div class="artigos-card-corpo"></div>
-                    <span class="badge badge-laranja">
-                        <i class="fas fa-lightbuld" aria-hidden="true"></i>
-                        Dicas
-                    </span>
-                    <h2 class="artigo-card-titulo">
-                    Como organizar o código
-                    </h2>
-                    <p class="artigo-card-texto texto-3-linhas">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Rem quasi fugiat ullam, facere tempora, voluptate minima ex 
-                        asperiores eius qui blanditiis assumenda mollitia provident
-                        tenetur repellat necessitatibus earum. Commodi, repellendus.
-                        Suscipit asperiores aspernatur soluta aperiam tempora? Corrupti 
-                        magnam fugiat doloribus laborum nisi repellendus, sequi cum sint
-                        numquam incidunt modi, cumque iste minima ipsa excepturi unde
-                        iure aspernatur fuga accusamus sed? Tempora impedit minima,
-                        sed laudantium unde rerum possimus soluta fuga. Cum ipsa labore,
-                        molestiae rerum illo, ducimus repellat porro, officia quos itaque
-                        nesciunt! Ullam, possimus quos repudiandae est maxime non!
-                    </p>
+              <div class="artigo-card-rodape">
+                <span class="artigo-card-meta">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                     25 mai. 2026 • 
+                     <i class="fa fa-clock" aria-hidden="true"></i>
+                     4 min
+                </span>
+                <a href="#" class="artigo-card-link">Ler artigo <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </article>
 
-                    <div class="artigos-card-rodape">
-                        <span class="artigo-card-meta">
-                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                            25 mai. 2026 •
-                            <i class="fa fa-clock" aria-hidden="true"></i>
-                            4 min
-                        </span>
-                        <a href="#" class="artigo-card-link">Ler artigos <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </article>
+           <article class="artigo-card">
+            <div class="artigo-card-imagem">
+              <div class="artigo-card-imagem-placeholder">Dicas</div>
+            </div>
 
-            <article class="artigo-card">
-                <div class="artigo-card-imagem">
-                    <div class="artigos-card-imagem-placeholder">Projetos</div>
+            <div class="artigo-card-corpo">
+              <span class="badge badge-laranja">
+                <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                Dicas
+              </span>
+              <h2 class="artigo-card-titulo">
+                Como organizar o código
+              </h2>
+              <p class="artigo-card-texto texto-3-linhas">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                unde perspiciatis perferendis error obcaecati, amet nam cum sit
+                ipsa, rerum laboriosam consectetur nesciunt veritatis totam
+                fugit dolor laudantium quae aut? Explicabo, veniam. Odit quis
+                sapiente, ab quasi, explicabo praesentium perferendis nam neque
+                quos error illo enim non eveniet dolore, voluptatem debitis
+                suscipit necessitatibus aliquid molestiae minima rem. Nihil,
+                officia incidunt! Laboriosam obcaecati ad itaque amet natus odio
+                error! Sequi quisquam dignissimos, eum quia ab voluptatum
+                laboriosam neque cum facere sunt, quae distinctio voluptatem
+                iure minus officiis, molestiae consequatur ad. Saepe!
+              </p>
 
-                    <div class="artigos-card-corpo"></div>
-                    <span class="badge badge-laranja">
-                        <i class="fa fa-rocket" aria-hidden="true"></i>
-                        Projeto
-                    </span>
-                    <h2 class="artigo-card-titulo">
-                    Monte seu primeiro portifólio do zero
-                    </h2>
-                    <p class="artigo-card-texto texto-3-linhas">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Rem quasi fugiat ullam, facere tempora, voluptate minima ex 
-                        asperiores eius qui blanditiis assumenda mollitia provident
-                        tenetur repellat necessitatibus earum. Commodi, repellendus.
-                        Suscipit asperiores aspernatur soluta aperiam tempora? Corrupti 
-                        magnam fugiat doloribus laborum nisi repellendus, sequi cum sint
-                        numquam incidunt modi, cumque iste minima ipsa excepturi unde
-                        iure aspernatur fuga accusamus sed? Tempora impedit minima,
-                        sed laudantium unde rerum possimus soluta fuga. Cum ipsa labore,
-                        molestiae rerum illo, ducimus repellat porro, officia quos itaque
-                        nesciunt! Ullam, possimus quos repudiandae est maxime non!
-                    </p>
+              <div class="artigo-card-rodape">
+                <span class="artigo-card-meta">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                     25 mai. 2026 • 
+                     <i class="fa fa-clock" aria-hidden="true"></i>
+                     4 min
+                </span>
+                <a href="#" class="artigo-card-link">Ler artigo <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </article>
 
-                    <div class="artigos-card-rodape">
-                        <span class="artigo-card-meta">
-                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                            25 mai. 2026 •
-                            <i class="fa fa-clock" aria-hidden="true"></i>
-                            4 min
-                        </span>
-                        <a href="#" class="artigo-card-link">Ler artigos <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </article>
+           <article class="artigo-card">
+            <div class="artigo-card-imagem">
+              <div class="artigo-card-imagem-placeholder">Projeto</div>
+            </div>
 
-          </div>
-        </section>
+            <div class="artigo-card-corpo">
+              <span class="badge badge-laranja">
+                <i class="fas fa-rocket" aria-hidden="true"></i>
+                Projeto
+              </span>
+              <h2 class="artigo-card-titulo">
+                Monte seu primeiro portifólio do zero
+              </h2>
+              <p class="artigo-card-texto texto-3-linhas">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                unde perspiciatis perferendis error obcaecati, amet nam cum sit
+                ipsa, rerum laboriosam consectetur nesciunt veritatis totam
+                fugit dolor laudantium quae aut? Explicabo, veniam. Odit quis
+                sapiente, ab quasi, explicabo praesentium perferendis nam neque
+                quos error illo enim non eveniet dolore, voluptatem debitis
+                suscipit necessitatibus aliquid molestiae minima rem. Nihil,
+                officia incidunt! Laboriosam obcaecati ad itaque amet natus odio
+                error! Sequi quisquam dignissimos, eum quia ab voluptatum
+                laboriosam neque cum facere sunt, quae distinctio voluptatem
+                iure minus officiis, molestiae consequatur ad. Saepe!
+              </p>
+
+              <div class="artigo-card-rodape">
+                <span class="artigo-card-meta">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                     25 mai. 2026 • 
+                     <i class="fa fa-clock" aria-hidden="true"></i>
+                     4 min
+                </span>
+                <a href="#" class="artigo-card-link">Ler artigo <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </article>
+
+
+        </div>
+      </section>
     </main>
-    
+
     <footer class="rodape">
-        <div class="rodape-container">
-            <div class="rodape-info">
-                <p class="rodape-logo">Dev <span>Blog</span></p>
-                <p class="rodape-sub">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, natus incidunt laboriosam amet unde provident facilis illo commodi modi error aut dolore sapiente et harum vel, voluptatibus officia, eum perferendis?</p>
+      <div class="rodape-container">
+        <div class="rodape-info">
+          <p class="rodape-logo">Dev<span>Blog</span></p>
+          <p class="rodape-sub">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In eos
+            consectetur minima eligendi. Natus fugiat molestiae, veniam ex
+            dolore facilis animi saepe eius autem, aperiam quia, voluptatibus
+            asperiores officiis sed!
+          </p>
 
-                <div class="rodape-redes">
-                    <a href="#"><i class="fab fa-github" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                </div>
-            </div>
-
-            <div class="rodape-links">
-                <h4 class="adm">NAVEGAÇÃO</h4>
-                <ul>
-                    <li><a href="index.html">Ínicio</a></li>
-                    <li><a href="artigos/index.html">Artigos</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </div>
-
-            <div class="rodape-links">
-                <h4 class="adm">ADMIN</h4>
-                <ul>
-                    <li><a href="auth/login/index.html">Login Admin</a></li>
-                    <li><a href="auth/cadastro/index.html">Criar Conta</a></li>
-                    <li><a href="auth/index.html">Dashboard</a></li>
-                </ul>
-            </div>
+          <div class="rodape-redes">
+            <a href="#"><i class="fab fa-github" aria-hidden="true"></i></a>
+            <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          </div>
         </div>
-        <div class="rodapa-copy"></div>
-        <p> &copy; 2026 - Todos os direitos reservados</p>
+
+        <div class="rodape-links">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="artigos/index.html">Artigos</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="rodape-links">
+          <h4>Admin</h4>
+          <ul>
+            <li><a href="auth/login/index.html">Login Admin</a></li>
+            <li><a href="auth/cadastro/index.html">Criar Conta</a></li>
+            <li><a href="admin/index.html">Dashboard</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rodape-copy">
+        <p>&copy; 2026 - Todos os direitos reservados</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
